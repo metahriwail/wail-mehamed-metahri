@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join the Happy Club</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="layout">
+
+    <header class="intro">
+      <p class="logo">the happy club<span>.</span></p>
+      <h1>Find your kind of <span>weird.</span></h1>
+      <p class="lead">A cozy club for the curious, the creative, and the people who wave at dogs.</p>
+      <img src="assets/club-card.svg" alt="A colorful membership card for the happy club">
+    </header>
+
+    <main class="side">
+      <section class="card">
+        <h2>Well, hello there! 👋</h2>
+        <p class="subtitle">Fill this in and consider yourself officially delightful.</p>
+
+        <form action="welcome.html" method="get">
+
+          <div class="two-cols">
+            <div class="field">
+              <label for="first-name">First name</label>
+              <input type="text" id="first-name" placeholder="Milo" required>
+            </div>
+            <div class="field">
+              <label for="last-name">Last name</label>
+              <input type="text" id="last-name" placeholder="Bloom" required>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="email">Email address</label>
+            <input type="email" id="email" placeholder="you@example.com" required>
+          </div>
+
+          <div class="field">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="At least 8 characters" minlength="8" required>
+          </div>
+
+          <div class="field">
+            <label for="happy">What makes you happy?</label>
+            <select id="happy" required>
+              <option value="" disabled selected>Pick your happy place</option>
+              <option>Making stuff &amp; being creative</option>
+              <option>Games &amp; geeky adventures</option>
+              <option>Snacks, coffee &amp; good food</option>
+              <option>A little bit of everything</option>
+            </select>
+          </div>
+
+          <fieldset class="vibes">
+            <legend>Choose your vibe</legend>
+
+            <input type="radio" id="vibe-chill" name="vibe" value="chill" required>
+            <label for="vibe-chill">Chill</label>
+
+            <input type="radio" id="vibe-chaotic" name="vibe" value="chaotic">
+            <label for="vibe-chaotic">Chaotic</label>
+
+            <input type="radio" id="vibe-sunshine" name="vibe" value="sunshine">
+            <label for="vibe-sunshine">Sunshine</label>
+          </fieldset>
+
+          <div class="promise">
+            <input type="checkbox" id="promise" required>
+            <label for="promise">I promise to bring good vibes and respect the other club members.</label>
+          </div>
+
+          <button type="submit">Join the happy club ↗</button>
+        </form>
+      </section>
+
+      <footer>
+        <p>This is a practice form. Your personal info is not sent anywhere.</p>
+      </footer>
+    </main>
+
+  </div>
+
+</body>
+</html>

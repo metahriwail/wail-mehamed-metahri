@@ -1,0 +1,267 @@
+:root {
+  --bg: #fff6e8;
+  --text: #2d2a45;
+  --muted: #7a7690;
+  --primary: #6c5ce7;
+  --pink: #ffd6e8;
+  --yellow: #ffe58a;
+  --line: #e3dcf0;
+  --card: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+}
+
+.intro {
+  padding: 50px 60px;
+  background-color: var(--pink);
+}
+
+.logo {
+  margin: 0 0 60px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: var(--primary);
+}
+
+h1 {
+  margin: 0 0 20px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(36px, 5vw, 60px);
+  line-height: 1.1;
+}
+
+h1 span {
+  color: var(--primary);
+  font-style: italic;
+}
+
+.lead {
+  max-width: 420px;
+  margin: 0 0 40px;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.intro img {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+}
+
+.card {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 36px;
+  background-color: var(--card);
+  border-radius: 24px;
+  box-shadow: 0 16px 40px rgba(108, 92, 231, 0.15);
+}
+
+h2 {
+  margin: 0 0 8px;
+  font-size: 28px;
+}
+
+.subtitle {
+  margin: 0 0 26px;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.field {
+  margin-bottom: 18px;
+}
+
+.two-cols {
+  display: flex;
+  gap: 14px;
+}
+
+.two-cols .field {
+  flex: 1;
+  min-width: 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 13px 14px;
+  background-color: #fbfaff;
+  color: var(--text);
+  font-size: 15px;
+  border: 2px solid var(--line);
+  border-radius: 12px;
+}
+
+input:focus-visible,
+select:focus-visible {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(108, 92, 231, 0.2);
+}
+
+.vibes {
+  display: flex;
+  gap: 10px;
+  margin: 0 0 20px;
+  padding: 0;
+  border: none;
+}
+
+.vibes legend {
+  margin-bottom: 8px;
+  padding: 0;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.vibes input {
+  position: absolute;
+  opacity: 0;
+}
+
+.vibes label {
+  flex: 1;
+  margin: 0;
+  padding: 12px;
+  text-align: center;
+  border: 2px solid var(--line);
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.vibes label:hover {
+  border-color: var(--primary);
+}
+
+.vibes input:checked + label {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: white;
+}
+
+.vibes input:focus-visible + label {
+  box-shadow: 0 0 0 4px rgba(108, 92, 231, 0.3);
+}
+
+.promise {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.promise input {
+  width: 20px;
+  height: 20px;
+  margin: 2px 0 0;
+  accent-color: var(--primary);
+}
+
+.promise label {
+  margin: 0;
+  color: var(--muted);
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+button {
+  width: 100%;
+  padding: 16px;
+  background-color: var(--primary);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 14px;
+  box-shadow: 0 8px 18px rgba(108, 92, 231, 0.35);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+button:hover {
+  transform: translateY(-3px);
+}
+
+button:focus-visible {
+  outline: 3px solid var(--text);
+  outline-offset: 3px;
+}
+
+footer {
+  max-width: 480px;
+  margin: 20px auto 0;
+  color: var(--muted);
+  font-size: 12px;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .intro {
+    padding: 36px 24px;
+  }
+
+  .logo {
+    margin-bottom: 30px;
+  }
+
+  .side {
+    padding: 24px 16px;
+  }
+
+  .card {
+    padding: 26px 20px;
+  }
+}
+
+@media (max-width: 420px) {
+  .two-cols {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .vibes {
+    flex-direction: column;
+  }
+}
