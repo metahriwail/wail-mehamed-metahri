@@ -1,0 +1,92 @@
+body {
+  background-color: #ffecd6;
+  color: #4a3326;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 35px 16px;
+}
+
+.recipe {
+  background-color: #fffcf5;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 34px;
+  border: 2px solid #e8c9a0;
+  border-radius: 24px;
+}
+
+.eyebrow {
+  color: #c8703f;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 38px 0 12px;
+}
+
+h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 42px;
+  color: #4a3326;
+  margin: 0 0 18px;
+}
+
+h1 em {
+  color: #d0793f;
+}
+
+.intro {
+  color: #8a6248;
+  font-size: 18px;
+  margin: 0 0 24px;
+}
+
+img {
+  display: block;
+  width: 100%;
+  border-radius: 28px;
+}
+
+.facts {
+  background-color: #faead0;
+  text-align: center;
+  font-size: 15px;
+  padding: 14px;
+  border-radius: 8px;
+  margin: 30px 0;
+}
+
+h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 24px;
+  color: #b8643a;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ecd9bd;
+  margin: 36px 0 20px;
+}
+
+ul,
+ol {
+  padding-left: 22px;
+}
+
+li {
+  line-height: 1.5;
+  margin-bottom: 14px;
+  padding-left: 10px;
+}
+
+.tip {
+  background-color: #fbe5bd;
+  border-left: 5px solid #c8703f;
+  padding: 18px 22px;
+  margin: 28px 0;
+  line-height: 1.6;
+}
+
+.footer {
+  color: #b8643a;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+}
