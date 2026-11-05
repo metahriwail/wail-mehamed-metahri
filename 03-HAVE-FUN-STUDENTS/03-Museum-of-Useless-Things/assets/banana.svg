@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 300" role="img">
+<defs>
+ <filter id="sh"><feDropShadow dx="1.8" dy="5" stdDeviation="3" flood-color="#66513a" flood-opacity="0.16"/></filter>
+</defs>
+
+<!-- The emergency banana -->
+<rect x="55" y="35" width="210" height="228" rx="14" fill="#c85e40" stroke="#533f31" stroke-width="6" filter="url(#sh)"/>
+<rect x="68" y="49" width="184" height="199" rx="7" fill="#f3ceac" stroke="#f8e4c6" stroke-width="4"/>
+<path d="M74 63L245 235" stroke="#c25c44" stroke-width="4" opacity=".21"/>
+<path d="M245 63L74 235" stroke="#c25c44" stroke-width="4" opacity=".21"/>
+<path d="M90 94C113 182 199 184 232 111C224 165 201 213 154 211C100 211 76 156 90 94Z" fill="#e6ad38" stroke="#735237" stroke-width="4" filter="url(#sh)"/>
+<path d="M91 94C104 164 191 178 225 117C209 163 184 189 146 186C115 183 98 154 91 94Z" fill="#f9db6d"/>
+<path d="M83 81L89 101L99 98L94 78Z" fill="#745536"/>
+<path d="M231 107L236 96L229 92L224 111Z" fill="#735237"/>
+<path d="M115 173q18 20 43 22" fill="none" stroke="#fff2a1" stroke-width="4" stroke-linecap="round"/>
+<path d="M69 220L251 220" stroke="#a34c39" stroke-width="2" stroke-dasharray="4 5"/>
+<rect x="74" y="220" width="172" height="39" fill="#f7e5be" stroke="#533f31" stroke-width="3"/>
+<text x="160" y="235" text-anchor="middle" fill="#593f35" font-family="Arial" font-size="9" font-weight="bold" letter-spacing="2">IN CASE OF</text>
+<text x="160" y="249" text-anchor="middle" fill="#a94131" font-family="Arial" font-size="12" font-weight="bold" letter-spacing="1.5">EMERGENCY</text>
+
+</svg>

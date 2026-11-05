@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 300" role="img">
+<defs>
+ <filter id="sh"><feDropShadow dx="1.8" dy="5" stdDeviation="3" flood-color="#66513a" flood-opacity="0.16"/></filter>
+</defs>
+
+<!-- Rock with a happy little face -->
+<ellipse cx="160" cy="247" rx="100" ry="13" fill="#6b585c" opacity=".17"/>
+<path d="M93 215 L227 215 L239 243 L80 243Z" fill="#a88b6b" stroke="#625443" stroke-width="4"/>
+<rect x="110" y="209" width="101" height="18" rx="2" fill="#d5bd8a" stroke="#635244" stroke-width="3"/>
+<rect x="123" y="218" width="74" height="13" rx="1" fill="#b65342"/>
+<text x="160" y="227" text-anchor="middle" font-family="Arial" fill="#f8e8ca" font-size="8" font-weight="bold" letter-spacing="2">GOOD BOY</text>
+<path d="M88 153 C78 114 99 87 122 76 Q156 53 186 78 Q232 79 240 141 Q243 199 191 206 L129 205 Q87 198 88 153Z" fill="#92908f" stroke="#565452" stroke-width="5" filter="url(#sh)"/>
+<path d="M97 154 Q96 101 140 86 Q154 80 174 91" fill="none" stroke="#d1cdcb" stroke-width="9" stroke-linecap="round" opacity=".8"/>
+<path d="M210 100Q230 121 222 150" fill="none" stroke="#686767" stroke-width="7" stroke-linecap="round" opacity=".7"/>
+<ellipse cx="134" cy="139" rx="5" ry="6" fill="#42413c"/><ellipse cx="184" cy="139" rx="5" ry="6" fill="#42413c"/>
+<path d="M146 159Q160 173 174 159" fill="none" stroke="#4d4840" stroke-width="4" stroke-linecap="round"/>
+<circle cx="121" cy="156" r="8" fill="#be8a84" opacity=".7"/><circle cx="194" cy="156" r="8" fill="#be8a84" opacity=".7"/>
+<g fill="#e8dcd0" opacity=".6"><circle cx="128" cy="107" r="3"/><circle cx="189" cy="100" r="3"/></g>
+
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 300" role="img">
+<defs>
+ <filter id="sh"><feDropShadow dx="1.8" dy="5" stdDeviation="3" flood-color="#66513a" flood-opacity="0.16"/></filter>
+</defs>
+
+<!-- The legendary missing sock -->
+<ellipse cx="160" cy="250" rx="85" ry="10" fill="#554039" opacity=".15"/>
+<g filter="url(#sh)" transform="rotate(9 151 154)">
+ <path d="M123 45 L191 45 L191 161 Q197 182 226 183 Q247 184 248 205 Q248 228 222 232 L154 232 Q110 232 108 186Z" fill="#b64a41" stroke="#6b443d" stroke-width="5"/>
+ <path d="M124 56H191M123 80H191M122 104H191" stroke="#f0d6ab" stroke-width="12"/>
+ <path d="M124 113H191" stroke="#d89074" stroke-width="5"/>
+ <path d="M108 185Q119 161 143 159Q171 162 171 184Q164 211 142 222L137 232L153 232Q109 230 108 185Z" fill="#e4b888" stroke="#6b443d" stroke-width="3"/>
+ <path d="M206 184Q223 187 247 205Q246 229 220 232H182Q188 216 206 184Z" fill="#e4b888" stroke="#6b443d" stroke-width="3"/>
+ <path d="M123 46H191" stroke="#534539" stroke-width="7" stroke-linecap="round"/>
+ <path d="M131 119L132 148" stroke="#e8a29a" stroke-width="4" stroke-linecap="round"/>
+</g>
+<path d="M67 132q-16-16-1-32M78 125q-13-9-8-19" stroke="#ae6d59" stroke-width="3" stroke-linecap="round" fill="none"/>
+<text x="52" y="90" font-family="Georgia,serif" font-style="italic" font-size="14" fill="#9b5b4d" transform="rotate(-8 52 90)">where is the other?</text>
+
+</svg>
