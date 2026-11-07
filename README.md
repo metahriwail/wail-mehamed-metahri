@@ -1,8 +1,3 @@
-# ITC Frontend – My HTML & CSS Projects
-
-My solutions for the ITC Blida HTML + CSS Student Guide: **17 challenges in 3 levels**.
-
-مجموعة حلولي لتحديات HTML و CSS من دليل الطالب في ITC بليدة: **17 تحدياً في 3 مستويات**.
 
 ## Live site / الموقع
 
