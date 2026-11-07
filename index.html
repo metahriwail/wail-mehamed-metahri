@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ITC Frontend – My HTML &amp; CSS Projects</title>
+  <style>
+    :root {
+      --bg: #fbf7ef;
+      --ink: #2b2a33;
+      --muted: #6d6a75;
+      --card: #ffffff;
+      --line: #e6dfd0;
+      --l1: #f2a541;
+      --l2: #4aa3a2;
+      --l3: #8b6fd1;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.6;
+    }
+    header, main { max-width: 880px; margin: 0 auto; padding-inline: 20px; }
+    header { padding-top: 48px; padding-bottom: 8px; }
+    h1 { font-size: 2rem; margin: 0 0 8px; }
+    header p { margin: 0; color: var(--muted); max-width: 60ch; }
+    main { padding-bottom: 64px; }
+    section { margin-top: 36px; }
+    section h2 {
+      font-size: 1.25rem;
+      margin: 0 0 4px;
+      padding-left: 12px;
+      border-left: 6px solid var(--accent);
+    }
+    section > p { margin: 0 0 14px; color: var(--muted); padding-left: 18px; }
+    .l1 { --accent: var(--l1); }
+    .l2 { --accent: var(--l2); }
+    .l3 { --accent: var(--l3); }
+    ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+    @media (min-width: 640px) { ul { grid-template-columns: 1fr 1fr; } }
+    li a {
+      display: block;
+      height: 100%;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-left: 6px solid var(--accent);
+      border-radius: 10px;
+      padding: 14px 16px;
+      color: var(--ink);
+      font-weight: 600;
+      text-decoration: none;
+    }
+    li a:hover { background: #fff8e8; }
+    li a:focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; }
+    footer { text-align: center; color: var(--muted); padding: 0 20px 40px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ITC Frontend – My HTML &amp; CSS Projects</h1>
+    <p>17 challenges in 3 levels. Click any project to open the live page.</p>
+  </header>
+
+  <main id="app"></main>
+
+  <footer>Built with HTML &amp; CSS · ITC Blida</footer>
+
+  <script>
+    // To add a project: add a line  ["Name", "folder/path/index.html"]  inside the right level.
+    const levels = [
+      {
+        cls: "l1",
+        title: "Level 1 – Pure Beginner",
+        desc: "HTML basics and first steps in CSS",
+        items: [
+          ["Momo the Hamster",          "01-pure-bignner/01-momo-the-hamster/STUDENT/index.html"],
+          ["Moon Pancakes",             "01-pure-bignner/02-moon-pancakes/STUDENT/index.html"],
+          ["Sunshine Lemonade Party",   "01-pure-bignner/03-sunshine-lemonade-party/STUDENT/index.html"],
+          ["Adopt Pip Card",            "01-pure-bignner/04-adopt-pip-card/STUDENT/index.html"],
+          ["Bloop Poster",              "01-pure-bignner/05-bloop-poster/student/index.html"],
+          ["Cookie Recipe",             "01-pure-bignner/06-cookie-recipe/student/index.html"],
+          ["Weekend Board",             "01-pure-bignner/07-weekend-board/student/index.html"],
+          ["Tiny Plant Shop",           "01-pure-bignner/08-tiny-plant-shop/student/index.html"]
+        ]
+      },
+      {
+        cls: "l2",
+        title: "Level 2 – Beginner",
+        desc: "Layouts and multi-section pages",
+        items: [
+          ["My Little Profile",  "02-bignner/01-My-Little-Profile-Instructor/student/index.html"],
+          ["Golden Ticket",      "02-bignner/02-Golden-Ticket-Instructor/student-starter/index.html"],
+          ["Join the Club",      "02-bignner/03-Join-the-Club-Instructor/student/index.html"],
+          ["Tiny Bites",         "02-bignner/04-Tiny-Bites-Instructor/student/index.html"]
+        ]
+      },
+      {
+        cls: "l3",
+        title: "Level 3 – Have Fun",
+        desc: "Complete websites with free design",
+        items: [
+          ["Capy Cafe",                    "03-HAVE-FUN-STUDENTS/01-Capy-Cafe/index.html"],
+          ["Oops Space Tours",             "03-HAVE-FUN-STUDENTS/02-Oops-Space-Tours/index.html"],
+          ["Museum of Useless Things",     "03-HAVE-FUN-STUDENTS/03-Museum-of-Useless-Things/index.html"],
+          ["Ducklympics",                  "03-HAVE-FUN-STUDENTS/04-Ducklympics/index.html"],
+          ["Lost Sock Adoption Center",    "03-HAVE-FUN-STUDENTS/05-Lost-Sock-Adoption-Center/index.html"]
+        ]
+      }
+    ];
+
+    const app = document.getElementById("app");
+    levels.forEach(level => {
+      const sec = document.createElement("section");
+      sec.className = level.cls;
+      sec.innerHTML = "<h2>" + level.title + "</h2><p>" + level.desc + "</p>";
+      const ul = document.createElement("ul");
+      level.items.forEach(([name, path]) => {
+        const li = document.createElement("li");
+        const a = document.createElement("a");
+        a.href = path;
+        a.textContent = name;
+        li.append(a);
+        ul.append(li);
+      });
+      sec.append(ul);
+      app.append(sec);
+    });
+  </script>
+</body>
+</html>
